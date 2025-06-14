@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css files/bootstrap.min.css">
+    <link rel="stylesheet" href="./css files/all.min.css">
+    <link rel="stylesheet" href="./css files/style.css">
+</head>
+
+
+<main class="py-5 ">
+    <div class="container d-flex flex-column justify-content-center align-ite">
+        <h1 class="text-center py-2 position-relative mx-auto">
+            Bookmarker
+        </h1>
+      
+        <div class="bookmark d-flex flex-column justify-content-center p-3 py-4 mt-5">
+            <h2 class="text-center fw-bold"><i class="fa-solid fa-bookmark"></i>
+            
+            Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark mi"></i>
+            </h2>
+            <div class="mb-4">
+                <label for=""><i class="fa-solid fa-book-bookmark pe-2 mb-2"></i>Site Name</label>
+                <input oninput="validateData('bookMarkNameId','nameAlert')" class="form-control" type="text" name="" id="bookMarkNameId" placeholder="BookMark Name">
+                <p class="alert alert-danger d-none" id="nameAlert">name of bookmark must start with at least 3 letter or digit</p>
+            </div>
+            <div class="mb-4">
+                    <label for=""><i class="fa-solid fa-link pe-2 mb-2"></i>Site URL</label>
+                <input oninput="validateData('bookMarkUrlId','urlAlert')" class="form-control " type="text" name="" id="bookMarkUrlId" placeholder="WebSite URL">
+                                <p class="alert alert-danger d-none" id="urlAlert">plz enter a valid URL</p>
+
+            </div>
+            <button type="button" onclick="add()" class="btn btn-danger  mx-auto mb-4">Submit</button>
+
+        </div>
+    </div>
+    <table class="table rounded-3 w-75 mx-auto  mt-4 bg-light text-center">
+      <thead class="rounded-2">
+        <th>index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="dataBody" class="">
+
+      </tbody>
+    </table>
+</main>
+
+
+<a href="" target=""></a>
+
+
+
+
+
+
+
+<body>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+</html>
